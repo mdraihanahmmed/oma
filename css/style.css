@@ -1,0 +1,575 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+    padding-left: 0;
+}
+a{
+    text-decoration: none !important;
+}
+
+/* nav start */
+
+nav{
+    background: #EEEDDE;
+}
+nav ul li{
+    margin-left: 100px;
+    position: relative;
+}
+
+nav ul li a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #203239 !important;
+    position: relative;
+}
+nav ul li a::after{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 24px;
+    height: 4px;
+    background: #F6762E;
+    content: " ";
+    border-radius: 20px;
+    opacity: 0;
+    transition: .4s;
+}
+nav ul li .dropdown{
+    position: absolute;
+    top: 48px;
+    left: 0;
+    background: #EEEDDE;
+    border-radius: 10px;
+    transform: rotateX(90deg);
+    transform-origin: top;
+    transition: .4s;
+    -webkit-box-shadow: 0px 0px 10px -1px rgba(0,0,0,1);
+-moz-box-shadow: 0px 0px 10px -1px rgba(0,0,0,1);
+box-shadow: 0px 0px 10px -1px rgba(0,0,0,1);
+}
+nav ul li .dropdown ul li{
+    margin-left: 0;
+    padding: 10px 20px;
+    border-bottom: 1px solid #F6762E;
+    transition: .4s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+nav ul li a i{
+    transition: .4s;
+}
+nav ul li:hover a i{
+    transform: rotate(180deg);
+}
+nav ul li a:hover::after{
+    opacity: 1;
+}
+nav ul li a:hover{
+    font-weight: 600;
+}
+nav ul li:hover .dropdown{
+    transform: rotateX(0deg);
+}
+nav ul li .dropdown ul li:hover{
+    background: #F6762E;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/* nav end */
+
+
+/* banner start */
+
+#banner_part{
+    background: #EEEDDE;
+}
+#banner_part h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 150%;
+    margin-top: 100px;
+    margin-bottom: 24px;
+}
+#banner_part p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(32, 50, 57,.55);
+    line-height: 30px;
+    width: 544px;
+}
+#banner_part .search{
+    position: relative;
+    margin-top: 56px;
+}
+#banner_part .search input{
+    width: 675px;
+    height: 70px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    padding-left: 56px;
+}
+#banner_part .search input::placeholder{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(32, 50, 57,.55);
+}
+#banner_part .search .button{
+    background: #203239;
+    padding: 13px 41px;
+    border-radius: 10px;
+    width: 140px;
+    position: absolute;
+    top: 50%;
+    right: 195px;
+    transform: translateY(-50%);
+    -webkit-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.5);
+}
+#banner_part .search .button a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+   
+}
+#banner_part .search i{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 24px;
+}
+#banner_part .box{
+    display: flex;
+    width: 590px;
+    justify-content: space-between;
+    margin: 56px 0;
+}
+#banner_part .box .item{
+    width: 28%;
+    
+
+}
+#banner_part .box .item h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 56px;
+    font-weight: 600;
+}
+#banner_part .box .item span{
+    color: #FF7527;
+}
+#banner_part .box .item p{
+    width: auto;
+}
+
+/* banner end */
+
+
+/* property start */
+
+#property_part{
+    margin-top: 100px;
+}
+#property_part h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 150%;
+    width: 533px;
+    color: #203239;
+    margin-bottom: 64px;
+}
+
+#property_part .item{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 30px;
+    border: 1px solid transparent;
+    transition: .4s;
+}
+
+#property_part .item h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #203239;
+    position: relative;
+}
+#property_part .item h3::after{
+    width: 8px;
+    height: 30px;
+    background: #F6762E;
+    border-radius: 5px;
+    position: absolute;
+    top: -6px;
+    left: -31px;
+    content: " ";
+}
+#property_part .item h3 span{
+    color: #F6762E;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#property_part .item p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    color: rgba(32, 50, 57,.55);
+    margin-top: 24px;
+    transition: .4s;
+}
+#property_part .item .margin{
+    margin-bottom: 45px;
+}
+#property_part .item a{
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #203239;
+    margin-top: 15px;
+    position: relative;
+    padding-left: 6px;
+}
+#property_part .item a::after{
+    width: 40px;
+    height: 30px;
+    background: #D6D5C7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: " ";
+    z-index: -1;
+    transition: .4s;
+}
+#property_part .item:hover a::after{
+    width: 104%;
+    border-radius: 5px;
+}
+#property_part .item a i{
+    margin-left: 14px;
+}
+#property_part .item:hover{
+    border-color: #EEEDDE;
+}
+#property_part .item p:hover{
+    color: #203239;
+}
+
+/* property end */
+
+/* residen start */
+
+#residen_part{
+    margin-top: 95px;
+    background: #EEEDDE;
+}
+#residen_part h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FF7527;
+    padding-top: 68px;
+}
+#residen_part h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #203239;
+    line-height: 150%;
+}
+#residen_part .image{
+    margin-top: 65px;
+    position: relative;
+    margin-bottom: 163px;
+}
+#residen_part .image .frontImage{
+    position: absolute;
+    top: 60px;
+    left: 85px;   
+}
+#residen_part .text{
+    margin-top: 70px;
+    margin-left: -60px;
+}
+#residen_part .text h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #203239;
+    line-height: 150%;
+    width: 507px;
+    
+}
+#residen_part .text p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #203239;
+    line-height: 30px;
+    width: 570px;
+    margin-top: 24px;
+}
+#residen_part .text .buttons a{
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #203239;
+    border: 1px solid #203239;
+    padding: 13px 41px 13px 77px;
+    border-radius: 10px;
+    margin-top: 48px;
+    transition: .4s;
+}
+#residen_part .text .buttons .btnTwo{
+    background: #203239;
+    color: #fff;
+    padding: 13px 41px;
+    margin-left: 48px;
+}
+#residen_part .text .buttons{
+    position: relative;
+    
+}
+#residen_part .text .buttons i{
+    font-size: 20px;
+    position: absolute;
+    top: 66px;
+    left: 43px;
+}
+
+#residen_part .text .buttons .btnOne:hover{
+    background: #203239;
+    color: #fff;
+}
+#residen_part .text .buttons .btnTwo:hover{
+    background: transparent;
+    color: #203239;
+}
+
+
+/* residen end */
+
+
+/* kota start */
+
+#kota_part{
+    margin-top: 68px;
+}
+#kota_part h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FF7527;
+}
+#kota_part h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #203239;
+    line-height: 150%;
+}
+#kota_part .icons i{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #D6D5C7;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 24px;
+    color: #FF7527;
+    margin-top: 38px;
+    cursor: pointer;
+}
+#kota_part .icons i:hover{
+    background: rgba(214, 213, 199,.30);
+    color: rgba(255, 117, 39,.30);
+}
+#kota_part .item{
+    margin-top: 64px;
+    margin-bottom: 68px;
+}
+#kota_part .item h5{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #203239;
+    margin-top: 16px;
+}
+#kota_part .item p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #203239;
+    margin-top: 8px;
+    width: 356px;
+}
+/* kota end */
+
+
+/* kami start */
+
+#kami_part{
+    background: #EEEDDE;
+    padding-bottom: 48px;
+}
+#kami_part  h3{
+    margin-top: 48px;
+    margin-bottom: 63px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height:150%;
+    color: #203239;
+}
+#kami_part  .item{
+    width: 243px;
+    height: 178px;
+    padding: 24px;
+    border: 1px solid rgba(255, 117, 39,.55);
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 48px;
+}
+#kami_part  .item a{
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #203239;
+    margin-bottom: 20px;
+}
+#kami_part  .itemTwo{
+    border-radius: 0;
+    width: 306px;
+    height: 178px;
+}
+#kami_part .itemTwo .buttonTwo a{
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: #FF7527;
+    width: 195px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10px;
+    margin-left: -48px;
+    transition: .4s;
+}
+
+#kami_part .item .text{
+    position: relative;
+    margin-left: 64px;
+}
+#kami_part .item .text h4{
+    margin-bottom: 10px;
+}
+#kami_part .item .text i{
+    font-size: 38px;
+    position: absolute;
+    top: 15px;
+    left: -60px;
+}
+#kami_part .item .text .button a{
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FF7527;
+    background: rgba(255, 117, 39,.20);
+    width: 195px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10px;
+    margin-left: -66px;
+    transition: .4s;
+}
+
+#kami_part .item .text .button a:hover{
+    background: #FF7527;
+    color: #fff;
+}
+#kami_part .itemTwo .buttonTwo a:hover{
+    background: rgba(255, 117, 39,.20);
+    color: #FF7527;
+}
+#kami_part .heading2 h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 150px;
+    color: #203239;
+}
+
+#kami_part .logo .imgOne{
+    margin-left: -20px;
+    margin-right: 32px;
+}
+/* kami end */
+
+/* footer start */
+
+footer{
+    background: #203239;
+    padding: 31px 0;
+}
+footer .icons i{
+    color: #EEEDDE;
+    margin-left: 74px;
+    font-size: 25px;
+    margin-top: 12px;
+    transition: .4s;
+}
+footer .insta{
+    display: inline-block;
+}
+footer .facebook{
+    display: inline-block;
+}
+footer .youtube{
+    display: inline-block;
+}
+footer .linked{
+    display: inline-block;
+}
+footer .insta:hover i{
+    color:  #E1306C;
+    cursor: pointer;
+}
+footer .facebook:hover i{
+    color:  #4267B2;
+    cursor: pointer;
+}
+footer .youtube:hover i{
+    color:  #FF0000;
+    cursor: pointer;
+}
+footer .linked:hover i{
+    color:  #0A66C2;
+    cursor: pointer;
+}
+
+
+
+/* footer end */
